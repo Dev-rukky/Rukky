@@ -67,6 +67,10 @@ nav {
         gap: 70%;
     }
 
+    .nav-padding {
+        padding: 20px 40px;
+    }
+
     .dropdown {
         position: relative;
         display: inline-block;
