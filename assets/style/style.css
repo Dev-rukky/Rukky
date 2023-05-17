@@ -64,7 +64,7 @@ nav {
 
 @media only screen and (max-width: 1024px) {
     .nav-container {
-        gap: 80%;
+        gap: 70%;
     }
 
     .dropdown {
