@@ -66,8 +66,8 @@ nav {
     .nav-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        /* gap: 70%; */
+        justify-content: center;
+        gap: 70%;
     }
 
     .nav-padding {
