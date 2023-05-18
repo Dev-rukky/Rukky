@@ -204,7 +204,7 @@ h2 {
     bottom: 208px;
 }
 
-.vector-3{
+.vector-3 {
     position: absolute;
     bottom: 140px;
     right: 800px;
@@ -222,17 +222,17 @@ h2 {
     top: 50px;
 }
 
- .vector-6 {
+.vector-6 {
     position: absolute;
     bottom: 370px;
     left: 500px;
- }
+}
 
 .vector-7 {
     position: absolute;
     top: 50px;
     left: -100px;
-} 
+}
 
 /* .banner-element {
     display: grid;
@@ -249,21 +249,21 @@ h2 {
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background-color: #f1f1f1;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: var(--secondary-color);
     border-radius: 2px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--primary-color); 
-  }
-  
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}
+
 
 @media only screen and (max-width: 1024px) {
     .nav-container {
