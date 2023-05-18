@@ -65,6 +65,9 @@ nav {
     display: none;
 }
 
+.banner {
+    position: relative;
+}
 
 .banner-padding {
     padding: 150px 0px 0px 0px;
@@ -183,6 +186,54 @@ h2 {
     background: var(--secondary-color)
 }
 
+.ban-ele {
+    position: relative;
+}
+
+.vector-1 {
+    position: absolute;
+    left: 745px;
+    right: 0%;
+    top: 0;
+    bottom: 0;
+}
+
+.vector-2 {
+    position: absolute;
+    left: 740px;
+    bottom: 208px;
+}
+
+.vector-3{
+    position: absolute;
+    bottom: 140px;
+    right: 800px;
+}
+
+.vector-4 {
+    position: absolute;
+    bottom: calc(740px - 455px);
+    right: 750px;
+}
+
+.vector-5 {
+    position: absolute;
+    left: 310px;
+    top: 50px;
+}
+
+ .vector-6 {
+    position: absolute;
+    bottom: 370px;
+    left: 500px;
+ }
+
+.vector-7 {
+    position: absolute;
+    top: 50px;
+    left: -100px;
+} 
+
 /* .banner-element {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -195,6 +246,24 @@ h2 {
     grid-column: ;
 } */
 
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color); 
+  }
+  
 
 @media only screen and (max-width: 1024px) {
     .nav-container {
@@ -256,6 +325,10 @@ h2 {
 
     .drop-link a:hover {
         color: #00aeef;
+    }
+
+    .vector-1 {
+        left: 80%;
     }
 }
 
