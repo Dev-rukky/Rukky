@@ -15,6 +15,9 @@
     --nav-font: 'Maven Pro', sans-serif;
     --banner-h1-font: 'Titillium Web', sans-serif;
     --footer-font: 'Montserrat', sans-serif;
+    --primary-color: #00aeef;
+    --secondary-color: #ff9700;
+
     /* font-family: 'Maven Pro', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Titillium Web', sans-serif; */
@@ -24,7 +27,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 9999;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.812);
     box-shadow: 0px 0px 10px 0px rgba(236, 236, 236, 0.321);
     backdrop-filter: blur(4px);
 }
@@ -60,6 +63,133 @@ nav {
 
 .dropdown {
     display: none;
+}
+
+
+.banner-padding {
+    padding: 150px 0px 0px 0px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    width: 60px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border: 1px solid var(--secondary-color);
+    border-radius: 2px;
+}
+
+.banner-text p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: var(--nav-font);
+    vertical-align: middle;
+}
+
+.banner-intro svg {
+    width: 24px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    vertical-align: middle;
+}
+
+.banner-heading {
+    text-align: center;
+}
+
+.banner-heading h1,
+h2 {
+    font-size: 70px;
+    font-family: var(--banner-h1-font);
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 0.03em;
+    text-shadow: 3px 1px 0px #00aeef;
+}
+
+.banner-heading p {
+    font-family: var(--nav-font);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 30px 0px 0px 0px;
+}
+
+.banner-container {
+    width: 620px;
+    position: relative;
+}
+
+.download {
+    padding: 10px 15px;
+    background: #00aeef;
+    box-shadow: 2px 3px 0px #000000;
+    border-radius: 63px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    font-family: var(--nav-font);
+    font-weight: 600;
+}
+
+.port {
+    background: #FCFEFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    box-shadow: 2px 3px 0px #000000;
+    border-radius: 63px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    font-family: var(--nav-font);
+    font-weight: 600;
+}
+
+.banner-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 0px 0px;
+    gap: 25px;
+}
+
+.port:hover {
+    background: #bfbfbf;
+}
+
+.download:hover {
+    background: var(--secondary-color)
+}
+
+.banner-element svg {
+    position: absolute;
+    top: -70px;
+}
+
+.banner-element {
+    width: 1000px;
 }
 
 
@@ -130,4 +260,11 @@ nav {
     .dropdown-content {
         right: calc(100% + -85px);
     }
+}
+
+@media only screen and (max-width: 425px) {
+    /* .dropdown-content {
+        width: 400px;
+        height: 80%;
+    } */
 }
