@@ -183,14 +183,17 @@ h2 {
     background: var(--secondary-color)
 }
 
-.banner-element svg {
-    position: absolute;
-    top: -70px;
+/* .banner-element {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 955px;
+    max-height: 578px
 }
 
-.banner-element {
-    width: 1000px;
-}
+.vector-1 {
+    grid-column: ;
+} */
 
 
 @media only screen and (max-width: 1024px) {
