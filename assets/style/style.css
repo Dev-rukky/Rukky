@@ -65,28 +65,8 @@ nav {
     display: none;
 }
 
-.banner {
-    position: relative;
-}
-
 .banner-padding {
     padding: 150px 0px 0px 0px;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.intro {
-    width: 60px;
-    height: 2px;
-    background-color: var(--secondary-color);
-    transform: matrix(1, 0, 0, -1, 0, 0);
-    border: 1px solid var(--secondary-color);
-    border-radius: 2px;
 }
 
 .banner-text p {
@@ -101,17 +81,12 @@ nav {
     width: 24px;
 }
 
-.banner-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .hi {
+    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 0px;
     gap: 8px;
     vertical-align: middle;
@@ -140,8 +115,57 @@ h2 {
 }
 
 .banner-container {
-    width: 620px;
-    position: relative;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(12, minmax(100px, 3fr) 1fr);
+    grid-template-rows: repeat(6, 100px);
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+}
+
+.banner-text {
+    grid-area: 1 / 5 / 1 / 20;
+    z-index: 9998;
+}
+
+.banner-heading {
+    padding: 30px 0px 0px;
+    max-width: 620px;
+    grid-area: 1 / 5 / 1 / 20;
+}
+
+.banner-btn {
+    grid-area: 4 / 5 / 5 / 20;
+}
+
+.vector-1 {
+    grid-area: 4 / 16 / 5 / 24;
+}
+
+.vector-2 {
+    grid-area: 2 / 16 / 3 / 23;
+}
+
+.vector-3 {
+    grid-area: 3 / 2 / 6 / 4;
+}
+
+.vector-4 {
+    grid-area: 2 / 5 / 6 / 5;
+}
+
+.vector-5 {
+    grid-area: 5 / 11 / 6 / 14;
+}
+
+.vector-6 {
+    grid-area: 1 / 5 / 1 / 20;
+    z-index: 9997;
+}
+
+.vector-7 {
+    grid-area: 5 / 5 / 6 / 6;
 }
 
 .download {
@@ -174,7 +198,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px 0px 0px;
+    /* padding: 30px 0px 0px 0px; */
     gap: 25px;
 }
 
@@ -185,66 +209,6 @@ h2 {
 .download:hover {
     background: var(--secondary-color)
 }
-
-.ban-ele {
-    position: relative;
-}
-
-.vector-1 {
-    position: absolute;
-    left: 745px;
-    right: 0%;
-    top: 0;
-    bottom: 0;
-}
-
-.vector-2 {
-    position: absolute;
-    left: 740px;
-    bottom: 208px;
-}
-
-.vector-3 {
-    position: absolute;
-    bottom: 140px;
-    right: 800px;
-}
-
-.vector-4 {
-    position: absolute;
-    bottom: calc(740px - 455px);
-    right: 750px;
-}
-
-.vector-5 {
-    position: absolute;
-    left: 310px;
-    top: 50px;
-}
-
-.vector-6 {
-    position: absolute;
-    bottom: 370px;
-    left: 500px;
-}
-
-.vector-7 {
-    position: absolute;
-    top: 50px;
-    left: -100px;
-}
-
-/* .banner-element {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    max-width: 955px;
-    max-height: 578px
-}
-
-.vector-1 {
-    grid-column: ;
-} */
 
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {
@@ -326,10 +290,6 @@ h2 {
     .drop-link a:hover {
         color: #00aeef;
     }
-
-    .vector-1 {
-        left: 80%;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -338,9 +298,18 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 425px) {
-    /* .dropdown-content {
-        width: 400px;
-        height: 80%;
-    } */
+/* @media only screen and (max-width: 425px) {
+    .banner-heading h1,
+h2 {
+    font-size: 50px;
 }
+
+.banner-heading p {
+    font-size: 16px;
+}
+
+.vector-1, .vector-2, .vector-3, .vector-4, .vector-5, .vector-6, .vector-7 {
+    display: none;
+}
+
+} */
