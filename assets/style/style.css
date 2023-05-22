@@ -24,7 +24,6 @@
     --heading-font: 'Whyte', sans-serif;
     --primary-color: #34b5e5;
     --secondary-color: #f0be31;
-    --element-color-1: #01cc07;
     --element-color-2: #fe8a45;
 
     /* font-family: 'Maven Pro', sans-serif;
@@ -86,9 +85,9 @@ nav {
     vertical-align: middle;
 }
 
-.banner-intro svg {
+/* .banner-intro svg {
     width: 24px;
-}
+} */
 
 .hi {
     text-align: center;
@@ -294,6 +293,65 @@ h2 {
 @media only screen and (max-width: 768px) {
     .dropdown-content {
         right: calc(100% + -85px);
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-text p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .banner-heading h1,
+    h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .banner-heading p {
+        font-size: 16px;
+    }
+
+    .vector-1,
+    .vector-2,
+    .vector-4,
+    .vector-5,
+    .vector-17 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+
+    .banner-heading h1,
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hi {
+        flex-direction: column-reverse;
+    }
+
+    .h1 p {
+        font-size: 14px;
+    }
+
+    .banner-heading h1,
+    h2 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .banner-heading p {
+        font-size: 15px;
     }
 }
 
