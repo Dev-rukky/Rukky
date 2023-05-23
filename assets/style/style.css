@@ -447,11 +447,11 @@ nav {
         font-weight: 500;
     }
 
-    .banner-heading h1,
+    /* .banner-heading h1,
     .banner-heading h2 {
         font-size: 50px;
         line-height: 60px;
-    }
+    } */
 
     .banner-heading p {
         font-size: 16px;
@@ -478,15 +478,21 @@ nav {
     .skill-grid {
         grid-template-columns: 1fr;
     }
+
+    .banner-heading h1,
+    .banner-heading h2 {
+        font-size: 50px;
+        line-height: normal;
+    }
 }
 
 @media only screen and (max-width: 525px) {
 
-    .banner-heading h1,
+    /* .banner-heading h1,
     .banner-heading h2 {
         font-size: 40px;
         font-weight: 700;
-    }
+    } */
 
     .about-heading h1 {
         font-size: 30px;
@@ -503,11 +509,11 @@ nav {
         font-size: 14px;
     }
 
-    .banner-heading h1,
+    /* .banner-heading h1,
     .banner-heading h2 {
         font-size: 30px;
         line-height: normal;
-    }
+    } */
 
     .banner-heading p {
         font-size: 15px;
