@@ -84,7 +84,7 @@ nav {
 }
 
 .nav-link a:hover {
-    color: var(--primary-color);
+    color: var(--element-color-2);
 }
 
 .dropdown {
