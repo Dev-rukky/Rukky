@@ -32,7 +32,8 @@
 }
 
 nav {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 9999;
     background-color: rgba(255, 255, 255, 0.812);
@@ -74,7 +75,8 @@ nav {
 }
 
 .banner {
-    max-height: 100vh;
+    height: 90vh;
+    max-height: 90vh;
 }
 
 .banner-padding {
