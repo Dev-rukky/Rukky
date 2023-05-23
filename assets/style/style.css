@@ -31,24 +31,6 @@
     font-family: 'Titillium Web', sans-serif; */
 }
 
-/* Customize the scrollbar track */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-color);
-    border-radius: 2px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--primary-color);
-}
-
 nav {
     position: fixed;
     width: 100%;
@@ -285,6 +267,24 @@ nav {
     justify-content: center;
     grid-area: 2 / 22 / 3 / 25;
     z-index: 9997;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
 }
 
 
