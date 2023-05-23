@@ -298,9 +298,9 @@ nav {
 }
 
 .skill-card-body p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 15px;
-    line-height: 15px;
+    line-height: 22px;
     text-align: center;
     color: #000;
 }
@@ -316,6 +316,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+}
+
+.skill-card:hover {
+    box-shadow: 6px 6px 0px #000000;
+    transform: translateY(-10px);
 }
 
 .skill-grid {
