@@ -187,7 +187,7 @@ nav {
 }
 
 .vector-1 {
-    animation: moveAround 10s alternate infinite;
+    animation: moveAround 4s alternate infinite;
 }
 
 .vector-2 {
@@ -204,7 +204,7 @@ nav {
     }
 
     100% {
-        transform: translate(40px, 10px);
+        transform: translate(10px, 40px);
     }
 }
 
@@ -325,65 +325,6 @@ nav {
     z-index: 9997;
 }
 
-.skill-heading {
-    font-family: var(--footer-font);
-}
-
-.skill-heading h1 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
-    text-align: center;
-}
-
-.skill-card-body {
-    font-family: var(--nav-font);
-}
-
-.skill-card-body h1 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.skill-card-body p {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    text-align: center;
-    color: #000;
-}
-
-.skill-card {
-    width: 288px;
-    height: 285px;
-    padding: 24px;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-}
-
-.skill-card:hover {
-    box-shadow: 6px 6px 0px #000000;
-    transform: translateY(-10px);
-}
-
-.skill-grid {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 2rem;
-    padding: 40px 20px 0px;
-}
-
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {
     width: 10px;
@@ -472,11 +413,6 @@ nav {
         justify-content: center;
         gap: 25px;
     }
-
-    .skill-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 2rem;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -500,12 +436,6 @@ nav {
         padding: 10px 0px;
     }
 
-    /* .banner-heading h1,
-    .banner-heading h2 {
-        font-size: 50px;
-        line-height: 60px;
-    } */
-
     .banner-heading p {
         font-size: 16px;
     }
@@ -521,16 +451,9 @@ nav {
     .about-padding {
         padding: 40px 25px;
     }
-
-    .skill-heading h1 {
-        font-size: 50px;
-    }
 }
 
 @media only screen and (max-width: 620px) {
-    .skill-grid {
-        grid-template-columns: 1fr;
-    }
 
     .banner-heading h1,
     .banner-heading h2 {
@@ -540,13 +463,6 @@ nav {
 }
 
 @media only screen and (max-width: 525px) {
-
-    /* .banner-heading h1,
-    .banner-heading h2 {
-        font-size: 40px;
-        font-weight: 700;
-    } */
-
     .about-heading h1 {
         font-size: 30px;
         line-height: 38px;
@@ -561,12 +477,6 @@ nav {
     .h1 p {
         font-size: 14px;
     }
-
-    /* .banner-heading h1,
-    .banner-heading h2 {
-        font-size: 30px;
-        line-height: normal;
-    } */
 
     .banner-heading p {
         font-size: 15px;
