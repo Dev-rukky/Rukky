@@ -596,6 +596,12 @@ nav {
     .about-padding {
         padding: 40px 25px;
     }
+
+    .design-list {
+        height: 150px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1rem;
+    }
 }
 
 @media only screen and (max-width: 620px) {
@@ -611,6 +617,10 @@ nav {
     .about-heading h1 {
         font-size: 30px;
         line-height: 38px;
+    }
+
+    .service-heading h1 {
+        font-size: 30px;
     }
 }
 
