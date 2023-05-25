@@ -270,7 +270,7 @@ nav {
 }
 
 .about-padding {
-    padding: 40px 100px;
+    padding: 40px 100px 0px;
 }
 
 .about-container {
@@ -323,6 +323,95 @@ nav {
     justify-content: center;
     grid-area: 2 / 22 / 3 / 25;
     z-index: 9997;
+}
+
+.service {
+    font-family: var(--footer-font);
+}
+
+.service-padding {
+    padding: 0px 100px;
+}
+
+.service-heading {
+    text-align: center;
+}
+
+.service-heading h6 {
+    color: var(--element-color-2);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.service-heading h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.rect {
+    width: 57.83px;
+    height: 57.83px;
+}
+
+.rect-1 {
+    background: #FE8A45;
+    border: 1px solid #000000;
+}
+
+.rect-2 {
+    background-color: #d9d9d9;
+    border: 1px solid #000000;
+}
+
+.rot {
+    transform: rotate(-45deg);
+}
+
+.design span {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--element-color-2);
+}
+
+.design p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 707px;
+}
+
+.design h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.design {
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.design-list {
+    height: 115.2px;
+    box-shadow: 3px -3px 0px var(--element-color-2);
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.design-list p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
 }
 
 /* Customize the scrollbar track */
