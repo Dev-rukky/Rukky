@@ -605,6 +605,7 @@ nav {
     font-weight: 600;
     font-size: 24px;
     line-height: 130.5%;
+    margin: 10px 0px 5px;
 }
 
 .test-text h6 {
@@ -899,6 +900,10 @@ nav {
 
     .test-text p {
         font-size: 14px;
+    }
+
+    .test-text h5 {
+        font-size: 20px;
     }
 }
 
