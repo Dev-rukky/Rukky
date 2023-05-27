@@ -682,7 +682,74 @@ nav {
 }
 
 footer {
-    background: #000;
+    background: rgba(15, 15, 15, 0.99);
+    font-family: var(--footer-font);
+    color: white;
+}
+
+.footer-head h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    max-width: 323px;
+}
+
+.footer-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130.5%;
+    margin-bottom: 20px;
+}
+
+.footer-text h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130.5%;
+    margin: 20px 0px;
+}
+
+.touch {
+    margin: 0;
+}
+
+.soc a {
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 0px #000000;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc a:hover {
+    background: var(--element-color-2);
+}
+
+.socials {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 65px);
+}
+
+.footer-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    /* grid-column-gap: 5rem; */
+}
+
+.copy {
+    padding-top: 20px;
+    border-top: 1px solid #FCFEFF;
+}
+
+.copy p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130.5%;
 }
 
 /* .text-ele {
@@ -824,6 +891,15 @@ footer {
     .contact-head h1 {
         font-size: 40px;
     }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1rem;
+    }
+
+    .footer-head h1 {
+        max-width: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -877,6 +953,10 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 1rem;
     }
+
+    .footer-head h1 {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 620px) {
@@ -922,6 +1002,10 @@ footer {
     .contact-head h1 {
         font-size: 30px;
     }
+
+    .footer-head h1 {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -960,20 +1044,9 @@ footer {
     .test-text h5 {
         font-size: 20px;
     }
-}
 
-/* @media only screen and (max-width: 425px) {
-    .banner-heading h1,
-h2 {
-    font-size: 50px;
+    .socials {
+        grid-template-columns: repeat(3, 65px);
+        grid-row-gap: 2rem;
+    }
 }
-
-.banner-heading p {
-    font-size: 16px;
-}
-
-.vector-1, .vector-2, .vector-3, .vector-4, .vector-5, .vector-6, .vector-7 {
-    display: none;
-}
-
-} */
