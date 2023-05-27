@@ -451,6 +451,96 @@ nav {
     max-width: 155px;
 }
 
+.Portfolio {
+    font-family: var(--footer-font);
+}
+
+.portfolio-padding {
+    padding: 40px 100px;
+}
+
+.portfolio-heading {
+    text-align: center;
+    margin: 0px 226px 65px;
+}
+
+.portfolio-heading h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.port-img img {
+    border: 1px solid #000000;
+    box-shadow: 10px 7px 0px #000000;
+    border-radius: 15px;
+    width: 80%;
+    /* max-width: 445px;
+    max-height: 359px; */
+}
+
+.port-text {
+    max-width: 490px;
+}
+
+.port-text h2 {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 33px;
+}
+
+.port-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.port-text span {
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    border-radius: 27px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.port-link {
+    color: #000;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: var(--element-color-2);
+    border: 1px solid #000;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 0px;
+}
+
+.port-link:hover {
+    box-shadow: 3px 1px 0px #000000;
+}
+
+.portfolio-item {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.portfolio-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 2rem;
+}
+
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {
     width: 10px;
@@ -552,6 +642,23 @@ nav {
     .service-padding {
         padding: 40px 25px;
     }
+
+    .portfolio-padding {
+        padding: 40px 25px;
+    }
+
+    .portfolio-item {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+    }
+
+    .portfolio-heading {
+        margin: 0px 0px 20px;
+    }
+
+    .portfolio-heading h1 {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -614,6 +721,10 @@ nav {
         font-size: 50px;
         line-height: normal;
     }
+
+    /* .port-img  img{
+        width: 90%;
+    } */
 }
 
 @media only screen and (max-width: 525px) {
@@ -624,6 +735,19 @@ nav {
 
     .service-heading h1 {
         font-size: 30px;
+    }
+
+    .portfolio-heading h1 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .port-text h2 {
+        font-size: 22px;
+    }
+
+    .port-text p {
+        font-size: 14px;
     }
 }
 
@@ -638,6 +762,18 @@ nav {
 
     .banner-heading p {
         font-size: 15px;
+    }
+
+    .design h1 {
+        font-size: 25px;
+    }
+
+    .port-tag {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        grid-row-gap: 1rem;
     }
 }
 
