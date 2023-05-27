@@ -677,6 +677,14 @@ nav {
     font-size: 20px;
 }
 
+.contact-padding {
+    padding: 40px 100px 60px;
+}
+
+footer {
+    background: #000;
+}
+
 /* .text-ele {
     display: grid;
     grid-template-columns: 1fr 1fr;
