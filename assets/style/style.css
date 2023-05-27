@@ -31,9 +31,9 @@
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     margin: 30px;
-}
+} */
 
 nav {
     position: sticky;
@@ -533,13 +533,122 @@ nav {
     padding: 10px;
 }
 
-.portfolio-grid {
+.drive {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.more:hover {
+    background-color: var(--element-color-2);
+}
+
+.test {
+    font-family: var(--heading-font);
+    background: rgba(255, 151, 0, 0.25);
+    text-align: center;
+}
+
+.test-text {
+    font-family: var(--footer-font);
+    padding: 10px;
+}
+
+.test-head h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.test-content {
+    background: #FFFFFF;
+    border: 2px solid #333333;
+    box-shadow: 7px 5px 0px #0B0B0B;
+    border-radius: 10px;
+    height: 307px;
+    width: 664px;
+    padding: 20px;
+    display: grid;
+    align-content: center;
+}
+
+.quo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.quo span {
+    background: #FE8A45;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    transform: rotate(0.5deg);
+    height: 40.999999572249074px;
+    width: 40.999999572249074px;
+    border-radius: 100%;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.test-text p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 149%;
+    /* or 30px */
+}
+
+.test-text h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130.5%;
+}
+
+.test-text h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130.5%;
+}
+
+.c {
+    height: 12px;
+    width: 12px;
+    background: rgba(0, 0, 0, 0.36);
+    border-radius: 100%;
+}
+
+.cl {
+    height: 21px;
+    width: 11px;
+    border-radius: 13px;
+    background: rgba(0, 0, 0, 0.92);
+}
+
+.circle {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, 17px);
+    margin-top: 20px;
+}
+
+/* .text-ele {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+/* .portfolio-grid {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 2rem;
-}
+} */
 
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {
@@ -659,6 +768,10 @@ nav {
     .portfolio-heading h1 {
         font-size: 40px;
     }
+
+    .test-head h1 {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -749,6 +862,10 @@ nav {
     .port-text p {
         font-size: 14px;
     }
+
+    .test-text p {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -774,6 +891,14 @@ nav {
         grid-template-rows: auto;
         align-items: center;
         grid-row-gap: 1rem;
+    }
+
+    .test-head h1 {
+        font-size: 30px;
+    }
+
+    .test-text p {
+        font-size: 14px;
     }
 }
 
