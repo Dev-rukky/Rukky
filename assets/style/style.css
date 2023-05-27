@@ -377,7 +377,7 @@ nav {
 }
 
 .rect-1 {
-    background: #FE8A45;
+    background: var(--element-color-2);
     border: 1px solid #000000;
     z-index: 500;
 }
@@ -583,7 +583,7 @@ nav {
 
 
 .quo span {
-    background: #FE8A45;
+    background: var(--element-color-2);
     border: 1px solid rgba(0, 0, 0, 0.9);
     transform: rotate(0.5deg);
     height: 40.999999572249074px;
@@ -636,6 +636,45 @@ nav {
     justify-items: center;
     grid-template-columns: repeat(5, 17px);
     margin-top: 20px;
+}
+
+.contact {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.contact-head h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.contact-head p {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-input input {
+    height: 106px;
+    width: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 18px;
+}
+
+.contact-input input::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.contact-input button {
+    background: var(--element-color-2);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 /* .text-ele {
@@ -773,6 +812,10 @@ nav {
     .test-head h1 {
         font-size: 40px;
     }
+
+    .contact-head h1 {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -866,6 +909,10 @@ nav {
 
     .test-text p {
         font-size: 16px;
+    }
+
+    .contact-head h1 {
+        font-size: 30px;
     }
 }
 
