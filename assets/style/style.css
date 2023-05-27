@@ -691,7 +691,7 @@ nav {
         display: none;
         position: absolute;
         z-index: 1;
-        min-width: 300px;
+        min-width: 160px;
         width: 500px;
         height: 160px;
         top: calc(100% + 12px);
