@@ -185,7 +185,7 @@ nav {
     }
 
     100% {
-        transform: translate(25px, 25px);
+        transform: translate(50px, 25px);
     }
 }
 
@@ -194,7 +194,7 @@ nav {
 }
 
 .vector-2 {
-    animation: moveAround 9s alternate infinite;
+    animation: moveAround 8s alternate infinite;
 }
 
 @keyframes moveAround {
@@ -203,20 +203,20 @@ nav {
     }
 
     50% {
-        transform: translate(25px, 25px);
+        transform: translate(50px, 50px);
     }
 
     100% {
-        transform: translate(10px, 40px);
+        transform: translate(20px, 40px);
     }
 }
 
 .vector-4 {
-    animation: moveAround 8s alternate infinite;
+    animation: moveAround 7s alternate infinite;
 }
 
 .vector-5 {
-    animation: moveAround 7s alternate infinite;
+    animation: moveAround 6s alternate infinite;
 }
 
 .vector-17 {
