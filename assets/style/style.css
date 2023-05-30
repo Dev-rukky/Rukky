@@ -425,6 +425,13 @@ nav {
     grid-template-columns: 1fr 1fr;
 }
 
+.service-grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
 .design-list {
     height: 115.2px;
     box-shadow: 3px -3px 0px var(--element-color-2);
@@ -436,6 +443,7 @@ nav {
     align-content: center;
     justify-items: center;
     margin-top: 82px;
+    width: 1100px;
 }
 
 .design-list p {
@@ -865,6 +873,14 @@ footer {
 
     .service-padding {
         padding: 40px 25px;
+    }
+
+    .design-list {
+        width: 90%;
+    }
+
+    .elemt1 {
+        grid-template-columns: none;
     }
 
     .portfolio-padding {
