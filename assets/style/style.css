@@ -430,6 +430,7 @@ nav {
     align-items: center;
     justify-content: center;
     justify-items: center;
+    width: 1100px;
 }
 
 .design-list {
@@ -869,6 +870,7 @@ footer {
         justify-content: center;
         text-align: center;
         gap: 10px;
+        max-width: 600px;
     }
 
     .service-padding {
