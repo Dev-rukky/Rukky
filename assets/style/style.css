@@ -118,7 +118,7 @@ nav {
     color: #000;
 }
 
-.nav__link::before {
+/* .nav__link::before {
     position: absolute;
     content: "";
     width: 0;
@@ -129,9 +129,8 @@ nav {
 
 .nav__link--active::before {
     width: 50%;
-}
+} */
 
-.nav__link--active,
 .nav__link:hover {
     color: var(--element-color-2);
 }
@@ -227,7 +226,7 @@ nav {
 
 .banner-text {
     grid-area: 1 / 5 / 1 / 20;
-    z-index: 9998;
+    z-index: 9997;
 }
 
 .banner-heading {
@@ -391,7 +390,7 @@ nav {
     align-items: center;
     justify-content: center;
     grid-area: 1 / 20 / 3 / 24;
-    z-index: 9998;
+    z-index: 9996;
 }
 
 .pro {
@@ -406,7 +405,7 @@ nav {
     align-items: center;
     justify-content: center;
     grid-area: 2 / 22 / 3 / 25;
-    z-index: 9997;
+    z-index: 9995;
 }
 
 .service {
@@ -909,6 +908,10 @@ footer {
         position: absolute;
         top: 3rem;
         right: 3rem;
+    }
+
+    .nav-container {
+        gap: 50%;
     }
 
     /* .nav-container {
