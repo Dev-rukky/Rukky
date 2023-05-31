@@ -55,7 +55,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 180px;
+    gap: 700px;
 }
 
 .nav__open,
