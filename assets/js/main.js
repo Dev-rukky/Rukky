@@ -20,3 +20,8 @@ navLinks.forEach((link) => {
         navMenu.classList.remove("nav__menu--open");
     });
 });
+
+window.addEventListener("load", function () {
+    var preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+});
