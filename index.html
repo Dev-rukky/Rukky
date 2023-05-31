@@ -10,11 +10,68 @@
     <link rel="shortcut icon" href="./assets/img/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b85a8d333b.js" crossorigin="anonymous"></script>
-    <script src='./assets/js/main.js'></script>
 </head>
 
 <body>
+    <nav>
+        <div class="nav-padding">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#"><img src="./assets/img/svg/Logo.png" alt="" width="30"></a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#About" class="nav__link nav__link--active">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#Portfolio" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#Testimonials" class="nav__link">Testimonials</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#Contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="nav__close">
+                        <i id="nav-close" class="ri-close-line"></i>
+                    </span>
+                </div>
+                <span class="nav__open">
+                    <i id="nav-open" class="ri-menu-5-line"></i>
+                </span>
+                <!-- <div class="nav-link">
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Testimonials">Testimonials</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div>
+                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+                                </path>
+                            </svg></li>
+                    </div> -->
+                <!-- <div class="dropdown-content">
+                        <div class="drop-link">
+                            <a href="#About">About</a>
+                            <a href="#Portfolio">Portfolio</a>
+                            <a href="#Testimonials">Testimonials</a>
+                            <a href="#Contact">Contact</a>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+        </div>
+    </nav>
 
     <section class="banner center">
         <div class="banner-padding">
@@ -47,42 +104,6 @@
         </div>
         </div>
     </section>
-
-    <nav>
-        <div class="nav-padding">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="#"><img src="./assets/img/svg/Logo.png" alt="" width="30"></a>
-                </div>
-                <div class="nav-link">
-                    <ul>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
-                        <li><a href="#Testimonials">Testimonials</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <div>
-                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
-                                </path>
-                            </svg></li>
-                    </div>
-                    <div class="dropdown-content">
-                        <div class="drop-link">
-                            <a href="#About">About</a>
-                            <a href="#Portfolio">Portfolio</a>
-                            <a href="#Testimonials">Testimonials</a>
-                            <a href="#Contact">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
 
     <section class="about center" id="About">
         <div class="about-padding">
@@ -381,6 +402,10 @@
         </div>
     </footer>
 
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src='./assets/js/main.js'></script>
 </body>
 
 </html>

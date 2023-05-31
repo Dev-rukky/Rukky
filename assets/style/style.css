@@ -36,8 +36,9 @@
 } */
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
     width: 100%;
     z-index: 9999;
     background-color: rgba(255, 255, 255, 0.812);
@@ -51,11 +52,58 @@ nav {
 
 .nav-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 750px;
+    gap: 180px;
 }
 
+.nav__open,
+.nav__close {
+    font-size: 2.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__open:hover,
+.nav__close:hover {
+    color: var(--element-color-2);
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__link {
+    position: relative;
+    font-family: var(--nav-font);
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav__link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0.3rem;
+    background-color: var(--element-color-2);
+    bottom: -1rem;
+}
+
+.nav__link--active::before {
+    width: 50%;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    color: var(--element-color-2);
+}
+
+/* 
 .nav-link ul {
     display: flex;
     align-items: center;
@@ -76,7 +124,7 @@ nav {
 
 .dropdown {
     display: none;
-}
+} */
 
 .banner {
     height: 90vh;
@@ -484,6 +532,7 @@ nav {
     box-shadow: 10px 7px 0px #000000;
     border-radius: 15px;
     width: 80%;
+    max-width: 440px;
     /* max-width: 445px;
     max-height: 359px; */
 }
@@ -794,7 +843,42 @@ footer {
 
 
 @media only screen and (max-width: 1024px) {
-    .nav-container {
+
+    .nav__open,
+    .nav__close {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #fff;
+        box-shadow: 0px 1px 19px 0px #efcf0025, 0px 0px 48px 0px hsla(30, 78%, 91%, .6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 28rem;
+        height: 100vh;
+        /* transition: var(--transition); */
+    }
+
+    .nav__menu--open {
+        right: 0;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+    }
+
+    /* .nav-container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -853,7 +937,7 @@ footer {
 
     .drop-link a:hover {
         color: #00aeef;
-    }
+    } */
 
     .about-container {
         display: flex;
