@@ -814,6 +814,10 @@ nav {
     margin-left: 60px;
 }
 
+.ans {
+    display: none;
+}
+
 .contact {
     font-family: var(--heading-font);
     text-align: center;

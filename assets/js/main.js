@@ -26,23 +26,59 @@ window.addEventListener("load", function () {
     preloader.style.display = "none";
 });
 
-function toggle() {
-    var faq = document.getElementById("hide");
-    if (faq.style.display === "none") {
-        faq.style.display = "block";
-    } else {
-        faq.style.display = "none";
-    }
-}
 
-function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    if (dropdownContent.style.display === "none") {
-        dropdownContent.style.display = "block";
+function toggleContent() {
+    var button = document.getElementById("toggleButton");
+    var content = document.getElementById("content");
+    
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      button.style.display = "none";
     } else {
-        dropdownContent.style.display = "none";
+      content.style.display = "none";
+      button.style.display = "block";
     }
-}
+  }
+  
+  function showButton() {
+    var button = document.getElementById("toggleButton");
+    var content = document.getElementById("content");
+    
+    content.style.display = "none";
+    button.style.display = "block";
+  }
+  
+// function toggleContent() {
+//     var button = document.getElementById("toggleButton");
+//     var content = document.getElementById("content");
+    
+//     if (content.style.display === "none") {
+//       content.style.display = "block";
+//       button.style.display = "none";
+//     } else {
+//       content.style.display = "none";
+//       button.style.display = "block";
+//     }
+//   }
+  
+
+// function toggle() {
+//     var faq = document.getElementById("hide");
+//     if (faq.style.display === "none") {
+//         faq.style.display = "block";
+//     } else {
+//         faq.style.display = "none";
+//     }
+// }
+
+// function toggleDropdown() {
+//     var dropdownContent = document.getElementById("dropdownContent");
+//     if (dropdownContent.style.display === "none") {
+//         dropdownContent.style.display = "block";
+//     } else {
+//         dropdownContent.style.display = "none";
+//     }
+// }
 
 
 
