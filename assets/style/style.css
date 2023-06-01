@@ -6,11 +6,17 @@
     src: url(/assets/Font/Whyte-Medium.ttf) format('ttf');
 }
 
+@font-face {
+    font-family: Whyte Inktrap;
+    src: url(/assets/Font/WhyteInktrap-Bold.ttf) format('ttf');
+}
+
 :root {
     --nav-font: 'Maven Pro', sans-serif;
     --banner-h1-font: 'Titillium Web', sans-serif;
     --footer-font: 'Montserrat', sans-serif;
     --heading-font: 'Whyte', sans-serif;
+    --faq-font: 'Whyte Inktrap', sans-serif;
     --primary-color: #34b5e5;
     --secondary-color: #f0be31;
     --element-color-2: #fe8a45;
