@@ -390,7 +390,7 @@ nav {
     text-align: center;
     border-radius: 100%;
     border: 1px solid #000;
-    background-color: var(--element-color-2);
+    background-color: var(--secondary-color);
     display: grid;
     align-content: center;
     align-items: center;
@@ -732,6 +732,86 @@ nav {
     justify-items: center;
     grid-template-columns: repeat(5, 17px);
     margin-top: 20px;
+}
+
+
+.faq-padding {
+    padding: 40px 100px;
+}
+
+.faq-head {
+    font-family: var(--faq-font);
+}
+
+.faq-head h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 138.3%;
+}
+
+.faq-content {
+    font-family: var(--footer-font);
+}
+
+.td-title {
+    font-family: var(--footer-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.td-sys {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    font-family: var(--footer-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.faq-btn button {
+    width: 496px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.faq-ans {
+    height: 149px;
+    width: 486px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    box-shadow: 9px 9px 0px #000000;
+    border-radius: 15px;
+    background: var(--element-color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ddc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ddcp {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.minus {
+    margin-left: 60px;
 }
 
 .contact {
