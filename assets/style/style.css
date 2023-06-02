@@ -758,6 +758,7 @@ nav {
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
+    margin-right: 25px;
 }
 
 .td-sys {
@@ -773,14 +774,15 @@ nav {
 }
 
 .faq-btn button {
-    width: 496px;
+    /* width: 500px; */
     height: 72px;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 15px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-around;
+    padding: 2rem;
 }
 
 .faq-btn {
@@ -1144,6 +1146,18 @@ footer {
         font-size: 40px;
     }
 
+    .faq-container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-head h1 {
+        font-size: 40px;
+    }
+
+    .faq-padding {
+        padding: 40px 25px;
+    }
+
     .test-head h1 {
         font-size: 40px;
     }
@@ -1253,6 +1267,10 @@ footer {
 
     .port-text p {
         font-size: 14px;
+    }
+
+    .faq-head h1 {
+        font-size: 30px;
     }
 
     .test-text p {
