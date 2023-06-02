@@ -791,14 +791,14 @@ nav {
 
 .faq-ans {
     height: 149px;
-    width: 486px;
+    /* width: 486px; */
     padding: 20px;
     border-radius: 15px;
     border: 1px solid #000000;
     box-shadow: 9px 9px 0px #000000;
     border-radius: 15px;
     background: var(--element-color-2);
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -824,6 +824,7 @@ nav {
     font-weight: 400;
     font-size: 15px;
     line-height: 150%;
+    max-width: 400px;
 }
 
 .minus {
@@ -832,6 +833,10 @@ nav {
 
 .ans {
     display: none;
+}
+
+.td-ans {
+    margin: 0;
 }
 
 .faq-content-container {
@@ -1273,6 +1278,14 @@ footer {
         font-size: 30px;
     }
 
+    .faq-btn button {
+        padding: 0.5rem;
+    }
+
+    .minus {
+        margin-left: 0px;
+    }
+
     .test-text p {
         font-size: 16px;
     }
@@ -1326,5 +1339,10 @@ footer {
     .socials {
         grid-template-columns: repeat(3, 65px);
         grid-row-gap: 2rem;
+    }
+
+    .td-title {
+        font-size: 14px;
+        margin-right: 5px;
     }
 }
