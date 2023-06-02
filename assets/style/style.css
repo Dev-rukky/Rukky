@@ -390,7 +390,7 @@ nav {
     text-align: center;
     border-radius: 100%;
     border: 1px solid #000;
-    background-color: var(--secondary-color);
+    background-color: var(--element-color-2);
     display: grid;
     align-content: center;
     align-items: center;
@@ -783,6 +783,10 @@ nav {
     justify-content: space-around;
 }
 
+.faq-btn {
+    padding: 2rem 0px;
+}
+
 .faq-ans {
     height: 149px;
     width: 486px;
@@ -796,6 +800,16 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 10px;
+    transition: all .50s ease;
+}
+
+#content {
+    transition: all 0.5s ease;
+}
+
+#toggleButton {
+    transition: all 0.5s ease;
 }
 
 .ddc {
@@ -816,6 +830,19 @@ nav {
 
 .ans {
     display: none;
+}
+
+.faq-content-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
 
 .contact {
@@ -955,7 +982,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-color);
+    background-color: var(--element-color-2);
     border-radius: 2px;
 }
 

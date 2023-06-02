@@ -32,11 +32,11 @@ function toggleContent() {
     var content = document.getElementById("content");
     
     if (content.style.display === "none") {
-      content.style.display = "block";
+      content.style.display = "flex";
       button.style.display = "none";
     } else {
       content.style.display = "none";
-      button.style.display = "block";
+      button.style.display = "flex";
     }
   }
   
@@ -45,9 +45,50 @@ function toggleContent() {
     var content = document.getElementById("content");
     
     content.style.display = "none";
-    button.style.display = "block";
+    button.style.display = "flex";
   }
   
+  function toggleContent1() {
+    var button1 = document.getElementById("toggleButton1");
+    var content1 = document.getElementById("content1");
+    
+    if (content1.style.display === "none") {
+      content1.style.display = "flex";
+      button1.style.display = "none";
+    } else {
+      content1.style.display = "none";
+      button1.style.display = "flex";
+    }
+  }
+  
+  function showButton1() {
+    var button2 = document.getElementById("toggleButton1");
+    var content2 = document.getElementById("content1");
+    
+    content2.style.display = "none";
+    button2.style.display = "flex";
+  }
+
+  function toggleContent2() {
+    var button2 = document.getElementById("toggleButton2");
+    var content2 = document.getElementById("content2");
+    
+    if (content2.style.display === "none") {
+      content2.style.display = "flex";
+      button2.style.display = "none";
+    } else {
+      content1.style.display = "none";
+      button1.style.display = "flex";
+    }
+  }
+  
+  function showButton2() {
+    var button3 = document.getElementById("toggleButton2");
+    var content3 = document.getElementById("content2");
+    
+    content3.style.display = "none";
+    button3.style.display = "flex";
+  }
 // function toggleContent() {
 //     var button = document.getElementById("toggleButton");
 //     var content = document.getElementById("content");
