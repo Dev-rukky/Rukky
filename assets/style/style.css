@@ -820,9 +820,9 @@ nav {
     justify-content: space-around;
 }
 
-.ddcp {
+.ddcp p {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 150%;
     max-width: 400px;
 }
@@ -1284,6 +1284,10 @@ footer {
         padding: 0.5rem;
     }
 
+    .faq-ans {
+        height: 100%;
+    }
+
     .minus {
         margin-left: 0px;
     }
@@ -1347,4 +1351,8 @@ footer {
         font-size: 14px;
         margin-right: 5px;
     }
+
+    /* .ddcp p {
+        font-size: 11px;
+    } */
 }
