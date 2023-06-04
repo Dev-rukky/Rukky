@@ -77,8 +77,8 @@ function toggleContent() {
       content2.style.display = "flex";
       button2.style.display = "none";
     } else {
-      content1.style.display = "none";
-      button1.style.display = "flex";
+      content2.style.display = "none";
+      button2.style.display = "flex";
     }
   }
   
@@ -88,6 +88,27 @@ function toggleContent() {
     
     content3.style.display = "none";
     button3.style.display = "flex";
+  }
+
+  function toggleContent3() {
+    var button3 = document.getElementById("toggleButton3");
+    var content3 = document.getElementById("content3");
+    
+    if (content3.style.display === "none") {
+      content3.style.display = "flex";
+      button3.style.display = "none";
+    } else {
+      content3.style.display = "none";
+      button3.style.display = "flex";
+    }
+  }
+
+  function showButton3() {
+    var button4 = document.getElementById("toggleButton3");
+    var content4 = document.getElementById("content3");
+    
+    content4.style.display = "none";
+    button4.style.display = "flex";
   }
 // function toggleContent() {
 //     var button = document.getElementById("toggleButton");
