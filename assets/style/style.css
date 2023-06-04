@@ -774,12 +774,12 @@ nav {
 }
 
 .faq-btn button {
-    /* width: 500px; */
+    width: 500px;
     height: 72px;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 15px;
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
@@ -1279,6 +1279,8 @@ footer {
     }
 
     .faq-btn button {
+        display: inline-flex;
+        width: 100%;
         padding: 0.5rem;
     }
 
