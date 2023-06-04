@@ -779,7 +779,7 @@ nav {
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 15px;
-    /* display: inline-flex; */
+    display: inline-flex;
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
