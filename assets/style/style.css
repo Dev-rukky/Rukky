@@ -337,7 +337,7 @@ nav {
 }
 
 .about-padding {
-    padding: 40px 100px 0px;
+    padding: 190px 100px 110px;
 }
 
 .about-card {
@@ -1199,6 +1199,18 @@ footer {
 }
 
 @media only screen and (max-width: 525px) {
+    .about-card p {
+        font-size: 14px;
+    }
+
+    .about-card {
+        height: 720px;
+    }
+
+    .about-card h1 {
+        font-size: 30px;
+    }
+
     .service-heading h1 {
         font-size: 30px;
     }
