@@ -340,22 +340,50 @@ nav {
     padding: 40px 100px 0px;
 }
 
-.about-container {
+.about-card {
+    font-family: var(--nav-font);
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 14px -16px 1px var(--element-color-2);
+    border-radius: 13px;
+    padding: 2rem;
+    width: 800px;
+    height: 360px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-card h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* .about-container {
     font-family: var(--heading-font);
     display: grid;
     align-items: center;
     justify-content: center;
     /* grid-template-columns: repeat(12, minmax(100px, .5fr) 1fr); */
-    grid-template-rows: 100px 100px 100px 100px;
+/* grid-template-rows: 100px 100px 100px 100px;
     gap: 50px;
-}
+} */
 
-.about-heading {
+/* .about-heading {
     max-width: 700px;
     grid-area: 1 / 2 / 4 / 16;
-}
+} */
 
-.about-heading h1 {
+/* .about-heading h1 {
     font-style: italic;
     font-weight: 500;
     font-size: 48px;
@@ -375,9 +403,9 @@ nav {
     justify-content: center;
     grid-area: 1 / 20 / 3 / 24;
     z-index: 9996;
-}
+} */
 
-.pro {
+/* .pro {
     width: 148px;
     height: 148px;
     text-align: center;
@@ -390,7 +418,7 @@ nav {
     justify-content: center;
     grid-area: 2 / 22 / 3 / 25;
     z-index: 9995;
-}
+} */
 
 .service {
     font-family: var(--footer-font);
@@ -1171,11 +1199,6 @@ footer {
 }
 
 @media only screen and (max-width: 525px) {
-    .about-heading h1 {
-        font-size: 30px;
-        line-height: 38px;
-    }
-
     .service-heading h1 {
         font-size: 30px;
     }
