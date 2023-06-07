@@ -17,9 +17,11 @@
     --footer-font: 'Montserrat', sans-serif;
     --heading-font: 'Whyte', sans-serif;
     --faq-font: 'Whyte Inktrap', sans-serif;
-    --primary-color: #34b5e5;
+    --dark-color: #34b5e5;
     --secondary-color: #f0be31;
     --element-color-2: #fe8a45;
+    --dark-bg-color: #191919;
+    /* --dark-element: */
 
     /* font-family: 'Maven Pro', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -661,7 +663,7 @@ nav {
 .test-head h1 {
     font-weight: 700;
     font-size: 48px;
-    margin-bottom: 20px;
+    padding-bottom: 3rem;
 }
 
 .test-content {
@@ -674,6 +676,7 @@ nav {
     padding: 20px;
     display: grid;
     align-content: center;
+    /* grid-area: 1 / 2 / 1 / 5; */
 }
 
 .quo {
@@ -737,9 +740,42 @@ nav {
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(5, 17px);
-    margin-top: 20px;
 }
 
+/* 
+.test-content-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.vector-17-1 {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.vector-18 {
+    grid-area: 3 / 5 / 3 / 6;
+}
+
+@keyframes spin {
+    0% {
+        rotate: translate(0, 0);
+    }
+
+    100% {
+        rotate: translate(30deg, 180deg);
+    }
+}
+
+.vector-18 {
+    animation: spin 4s alternate infinite;
+}
+
+.vector-17-1 {
+    animation: spin 8s alternate infinite;
+} */
 
 .faq-padding {
     padding: 40px 100px;
