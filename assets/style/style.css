@@ -740,6 +740,7 @@ nav {
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(5, 17px);
+    padding-top: 3rem;
 }
 
 /* 
