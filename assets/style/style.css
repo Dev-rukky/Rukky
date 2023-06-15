@@ -733,7 +733,7 @@ nav {
     background: rgba(0, 0, 0, 0.92);
 }
 
-/* .circle {
+.circle {
     display: grid;
     align-content: center;
     justify-content: center;
@@ -741,7 +741,7 @@ nav {
     justify-items: center;
     grid-template-columns: repeat(5, 17px);
     padding-top: 3rem;
-} */
+}
 
 /* 
 .test-content-container {
