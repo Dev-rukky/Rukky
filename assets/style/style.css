@@ -515,7 +515,7 @@ nav {
 .design {
     display: grid;
     align-items: center;
-    padding: 45px;
+    /* padding: 45px; */
     grid-template-columns: 1fr 1fr;
 }
 
@@ -673,7 +673,7 @@ nav {
     border-radius: 10px;
     height: 307px;
     width: 664px;
-    padding: 20px;
+    /* padding: 20px; */
     display: grid;
     align-content: center;
     /* grid-area: 1 / 2 / 1 / 5; */
@@ -1064,7 +1064,7 @@ footer {
     }
 
     .nav-container {
-        gap: 50%;
+        column-gap: 60%;
     }
 
     .nav-soci {
@@ -1148,7 +1148,7 @@ footer {
     }
 
     .faq-padding {
-        padding: 40px 25px;
+        padding: 40px 10px;
     }
 
     .test-head h1 {
@@ -1167,6 +1167,10 @@ footer {
     .footer-head h1 {
         max-width: none;
     }
+
+    .nav-padding {
+        padding: 20px 25px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1179,6 +1183,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 0px 1rem;
     }
 
     .banner-text p {
@@ -1267,6 +1272,7 @@ footer {
 
     .faq-head h1 {
         font-size: 30px;
+        text-align: center;
     }
 
     .faq-btn button {
@@ -1341,6 +1347,7 @@ footer {
     .td-title {
         font-size: 14px;
         margin-right: 5px;
+        text-align: left;
     }
 
 }
