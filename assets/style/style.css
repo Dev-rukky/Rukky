@@ -294,6 +294,7 @@ nav {
     padding: 10px 15px;
     background: var(--secondary-color);
     box-shadow: 2px 3px 0px #000000;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 63px;
     font-size: 12px;
     line-height: 14px;
@@ -304,7 +305,7 @@ nav {
 
 .port {
     background: #FCFEFF;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px 15px;
     box-shadow: 2px 3px 0px #000000;
     border-radius: 63px;
@@ -510,6 +511,7 @@ nav {
 .design h1 {
     font-size: 32px;
     font-weight: 600;
+    margin-left: 3rem;
 }
 
 .design {
@@ -554,99 +556,142 @@ nav {
     max-width: 155px;
 }
 
-.Portfolio {
-    font-family: var(--footer-font);
+.port-text h1 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: normal;
+    text-align: center;
 }
 
 .portfolio-padding {
     padding: 40px 100px;
 }
 
-.portfolio-heading {
-    text-align: center;
-    margin: 0px 226px 65px;
+.slider-con {
+    display: grid;
+    place-items: center;
 }
 
-.portfolio-heading h1 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 59px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.port-img img {
-    border: 1px solid #000000;
-    box-shadow: 10px 7px 0px #000000;
+.slider {
+    position: relative;
+    width: min(800px, 90vw);
+    height: 75vmin;
+    border: 4px solid black;
     border-radius: 15px;
-    width: 80%;
-    max-width: 440px;
-    /* max-width: 445px;
-    max-height: 359px; */
+    overflow: hidden;
 }
 
-.port-text {
-    max-width: 490px;
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-.port-text h2 {
-    font-weight: 500;
-    font-size: 27px;
-    line-height: 33px;
+.arrow-left {
+    left: 1rem;
 }
 
-.port-text p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+.arrow-right {
+    right: 1rem;
 }
 
-.port-text span {
-    padding: 10px 15px;
-    border: 1px solid rgba(0, 0, 0, 0.41);
-    border-radius: 27px;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
+.slider-track {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    transition: transform 0.8s;
 }
 
-.port-link {
-    color: #000;
-    width: 44px;
-    height: 44px;
-    border-radius: 100%;
-    background-color: var(--element-color-2);
-    border: 1px solid #000;
+.slider-slide {
     display: grid;
+    place-items: center;
+    min-width: 100%;
+    height: inherit;
+    border: 1px solid black;
+    font-family: var(--footer-font);
     align-content: center;
+    row-gap: 1rem;
+    /* font: 900 1rem helvetica, sans-serif; */
+}
+
+.slider-icon {
+    font-size: 2.5rem;
+}
+
+.slider-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: black;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+.active {
+    width: 2rem;
+}
+
+.slider-image {
+    width: 50%;
+}
+
+.img--1 {
+    width: 100%;
+}
+
+.live {
+    padding: 10px 15px;
+    background: var(--element-color-2);
+    box-shadow: 2px 3px 0px #000000;
+    border-radius: 63px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.github {
+    padding: 10px 15px;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 2px 3px 0px #000000;
+    border-radius: 63px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.port-ntn {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0px 0px;
+    column-gap: 1rem;
+    text-align: center;
 }
 
-.port-link:hover {
-    box-shadow: 3px 1px 0px #000000;
+.slider-text {
+    text-align: center;
 }
 
-.portfolio-item {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    justify-self: center;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
+.slider-text h1 {
+    margin-bottom: 1rem;
 }
 
-.drive {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.more:hover {
-    background-color: var(--element-color-2);
+.slider-text p {
+    margin-bottom: 1rem;
 }
 
 .test {
@@ -1126,19 +1171,6 @@ footer {
         padding: 40px 25px;
     }
 
-    .portfolio-item {
-        grid-template-columns: 1fr;
-        grid-row-gap: 2rem;
-    }
-
-    .portfolio-heading {
-        margin: 0px 0px 20px;
-    }
-
-    .portfolio-heading h1 {
-        font-size: 40px;
-    }
-
     .faq-container {
         grid-template-columns: 1fr;
     }
@@ -1170,6 +1202,14 @@ footer {
 
     .nav-padding {
         padding: 20px 25px;
+    }
+
+    .img--1 {
+        width: 70%;
+    }
+
+    .slider-text h1 {
+        font-size: 20px;
     }
 }
 
@@ -1257,19 +1297,6 @@ footer {
         font-size: 30px;
     }
 
-    .portfolio-heading h1 {
-        font-size: 30px;
-        line-height: normal;
-    }
-
-    .port-text h2 {
-        font-size: 22px;
-    }
-
-    .port-text p {
-        font-size: 14px;
-    }
-
     .faq-head h1 {
         font-size: 30px;
         text-align: center;
@@ -1323,14 +1350,6 @@ footer {
 
     .design h1 {
         font-size: 25px;
-    }
-
-    .port-tag {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        align-items: center;
-        grid-row-gap: 1rem;
     }
 
     .test-head h1 {
