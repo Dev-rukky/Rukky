@@ -1,3 +1,8 @@
+window.addEventListener("load", function () {
+  var preloader = document.getElementById("preloader");
+  preloader.style.display = "none";
+});
+
 const header = document.getElementById("header"),
   navMenu = document.getElementById("nav-menu"),
   navOpen = document.getElementById("nav-open"),
@@ -20,12 +25,6 @@ navLinks.forEach((link) => {
     navMenu.classList.remove("nav__menu--open");
   });
 });
-
-window.addEventListener("load", function () {
-  var preloader = document.getElementById("preloader");
-  preloader.style.display = "none";
-});
-
 
 function toggleContent() {
   var button = document.getElementById("toggleButton");
