@@ -571,6 +571,7 @@ nav {
 .slider-con {
     display: grid;
     place-items: center;
+    padding-top: 2rem;
 }
 
 .container {
@@ -584,7 +585,7 @@ nav {
     position: relative;
     width: min(800px, 90vw);
     height: 75vmin;
-    border: 4px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px;
     overflow: hidden;
 }
@@ -618,7 +619,7 @@ nav {
     place-items: center;
     min-width: 100%;
     height: inherit;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: var(--footer-font);
     align-content: center;
     row-gap: 1rem;
@@ -641,6 +642,8 @@ nav {
 
 .active {
     width: 2rem;
+    background-color: var(--element-color-2);
+    border: 1px solid #000;
 }
 
 .slider-image {
@@ -660,6 +663,7 @@ nav {
     line-height: 14px;
     color: #000;
     font-weight: 600;
+    border: 1px solid #000;
 }
 
 .github {
@@ -1211,6 +1215,26 @@ footer {
     .slider-text h1 {
         font-size: 20px;
     }
+
+    .vector-1 {
+        animation: none;
+    }
+
+    .vector-2 {
+        animation: none;
+    }
+
+    .vector-4 {
+        animation: none;
+    }
+
+    .vector-5 {
+        animation: none;
+    }
+
+    .vector-17 {
+        animation: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1333,6 +1357,18 @@ footer {
         font-size: 30px;
         line-height: normal;
     }
+
+    .port-text h1 {
+        font-size: 30px;
+    }
+
+    .slider-text h1 {
+        font-size: 16px;
+    }
+
+    .slider-text p {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1370,9 +1406,26 @@ footer {
     }
 
     .td-title {
-        font-size: 14px;
+        font-size: 9px;
         margin-right: 5px;
         text-align: left;
     }
 
+    .slider-arrow {
+        font-size: 1rem;
+    }
+
+    .live,
+    .github {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+    }
+
+    .slider {
+        height: 80vmin;
+    }
 }
