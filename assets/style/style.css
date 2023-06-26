@@ -43,6 +43,10 @@ a {
     text-decoration: none !important;
 }
 
+a:hover {
+    color: #000 !important;
+}
+
 /* body {
     margin: 30px;
 } */
@@ -374,58 +378,6 @@ nav {
     font-size: 16px;
     line-height: 30px;
 }
-
-/* .about-container {
-    font-family: var(--heading-font);
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    /* grid-template-columns: repeat(12, minmax(100px, .5fr) 1fr); */
-/* grid-template-rows: 100px 100px 100px 100px;
-    gap: 50px;
-} */
-
-/* .about-heading {
-    max-width: 700px;
-    grid-area: 1 / 2 / 4 / 16;
-} */
-
-/* .about-heading h1 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 55px;
-}
-
-.exp {
-    width: 148px;
-    height: 148px;
-    text-align: center;
-    border-radius: 100%;
-    border: 1px solid #000;
-    background-color: var(--element-color-2);
-    display: grid;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    grid-area: 1 / 20 / 3 / 24;
-    z-index: 9996;
-} */
-
-/* .pro {
-    width: 148px;
-    height: 148px;
-    text-align: center;
-    border-radius: 100%;
-    border: 1px solid #000;
-    background-color: #d9d9d9;
-    display: grid;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    grid-area: 2 / 22 / 3 / 25;
-    z-index: 9995;
-} */
 
 .service {
     font-family: var(--footer-font);
@@ -935,60 +887,8 @@ nav {
     margin: 0;
 }
 
-.faq-content-container {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.faq-container {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contact {
+.container {
     font-family: var(--heading-font);
-    text-align: center;
-}
-
-.contact-head h1 {
-    font-weight: 700;
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.contact-head p {
-    font-weight: 400;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-input input {
-    height: 106px;
-    width: 700px;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    padding: 18px;
-}
-
-.contact-input input::placeholder {
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.contact-input button {
-    background: var(--element-color-2);
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 20px;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.contact-padding {
-    padding: 40px 100px 60px;
 }
 
 footer {
@@ -1031,6 +931,7 @@ footer {
     display: grid;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000;
 }
 
 .soc a:hover {
@@ -1262,6 +1163,7 @@ footer {
     .banner-heading h1,
     .banner-heading h2 {
         font-size: 50px;
+        line-height: normal;
     }
 
     .banner-heading {
