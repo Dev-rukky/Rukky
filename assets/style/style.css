@@ -648,6 +648,8 @@ nav {
 
 .slider-text h1 {
     margin-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .slider-text p {
