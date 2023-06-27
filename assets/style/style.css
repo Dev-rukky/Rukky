@@ -384,7 +384,7 @@ nav {
 }
 
 .service-padding {
-    padding: 40px 100px;
+    padding: 40px 100px 200px;
 }
 
 .service-heading {
@@ -662,6 +662,10 @@ nav {
     text-align: center;
 }
 
+.test-padding {
+    padding: 40px 100px;
+}
+
 .test-text {
     font-family: var(--footer-font);
     padding: 10px;
@@ -785,118 +789,29 @@ nav {
     animation: spin 8s alternate infinite;
 } */
 
-.faq-padding {
-    padding: 40px 100px;
-}
-
-.faq-head {
-    font-family: var(--faq-font);
-}
-
-.faq-head h1 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 138.3%;
-}
-
-.faq-content {
-    font-family: var(--footer-font);
-}
-
-.td-title {
-    font-family: var(--footer-font);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    margin-right: 25px;
-}
-
-.td-sys {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    font-family: var(--footer-font);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-}
-
-.faq-btn button {
-    width: 500px;
-    height: 72px;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius: 15px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
-}
-
-.faq-btn {
-    padding: 2rem 0px;
-}
-
-.faq-ans {
-    height: 149px;
-    /* width: 486px; */
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #000000;
-    box-shadow: 9px 9px 0px #000000;
-    border-radius: 15px;
-    background: var(--element-color-2);
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-    transition: all .50s ease;
-}
-
-#content {
-    transition: all 0.5s ease;
-}
-
-#toggleButton {
-    transition: all 0.5s ease;
-}
-
-.ddc {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.ddcp p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    max-width: 400px;
-}
-
-.minus {
-    margin-left: 60px;
-}
-
-.ans {
-    display: none;
-}
-
-.td-ans {
-    margin: 0;
+.accordion-button:not(.collapsed) {
+    color: var(--element-color-2) !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
 }
 
 .container {
     font-family: var(--heading-font);
 }
 
+.p-5 {
+    padding: 3rem !important;
+    margin: 4rem 0 !important;
+}
+
 footer {
     background: rgba(15, 15, 15, 0.99);
     font-family: var(--footer-font);
     color: white;
+}
+
+.footer-padding {
+    padding: 40px 100px;
 }
 
 .footer-head h1 {
