@@ -524,6 +524,23 @@ nav {
     padding: 40px 100px;
 }
 
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.view-more {
+    background-color: var(--element-color-2);
+    box-shadow: none;
+}
+
+.view-more:hover {
+    box-shadow: 2px 3px 0px #000000;
+}
+
 .slider-con {
     display: grid;
     place-items: center;
@@ -1108,9 +1125,10 @@ footer {
     }
 
     .design-list {
-        height: 150px;
+        height: 180px;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 1rem;
+        padding-top: 0.25rem;
     }
 
     .footer-head h1 {
